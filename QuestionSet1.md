@@ -7,11 +7,11 @@ Your manager would like to run a command manually on occasion to output the stat
 Start the Job and check its history. Each pod created by the Job should have the label id: awesome-job. The job should be named neb-new-job and the container neb-new-job-container.``
 
 > `` Team Mercury asked you to perform some operations using Helm, all in Namespace mercury:
-* 1. Delete release internal-issue-report-apiv1
-* 2. Upgrade release internal-issue-report-apiv2 to any newer version of chart bitnami/nginx available
-* 3. Install a new release internal-issue-report-apache of chart bitnami/apache. The Deployment should have two replicas, set these via Helm- 
+>> Delete release internal-issue-report-apiv1
+>> Upgrade release internal-issue-report-apiv2 to any newer version of chart bitnami/nginx available
+>> Install a new release internal-issue-report-apache of chart bitnami/apache. The Deployment should have two replicas, set these via Helm- 
      values during install.
-*4. There seems to be a broken release, stuck in pending-install state. Find it and delete it``
+>> There seems to be a broken release, stuck in pending-install state. Find it and delete it``
 
 
 > ``Team Neptune has its own ServiceAccount named neptune-sa-v2 in Namespace neptune. A coworker needs the token from the Secret that belongs to that ServiceAccount. Write the base64 decoded token to file /opt/course/5/token.``
