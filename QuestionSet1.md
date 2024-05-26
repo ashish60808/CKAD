@@ -6,16 +6,16 @@ Your manager would like to run a command manually on occasion to output the stat
 > ``Team Neptune needs a Job template located at /opt/course/3/job.yaml. This Job should run image busybox:1.31.0 and execute sleep 2 && echo done. It should be in namespace neptune, run a total of 3 times and should execute 2 runs in parallel.
 Start the Job and check its history. Each pod created by the Job should have the label id: awesome-job. The job should be named neb-new-job and the container neb-new-job-container.``
 
-> `` Team Mercury asked you to perform some operations using Helm, all in Namespace mercury:
-> 
-> Delete release internal-issue-report-apiv1
-> 
-> Upgrade release internal-issue-report-apiv2 to any newer version of chart bitnami/nginx available
-> 
-> Install a new release internal-issue-report-apache of chart bitnami/apache. The Deployment should have two replicas, set these via Helm- 
+> `` Team Mercury asked you to perform some operations using Helm, all in Namespace mercury:``
+
+>> Delete release internal-issue-report-apiv1
+
+>> Upgrade release internal-issue-report-apiv2 to any newer version of chart bitnami/nginx available
+
+>> Install a new release internal-issue-report-apache of chart bitnami/apache. The Deployment should have two replicas, set these via Helm- 
      values during install.
-> 
-> There seems to be a broken release, stuck in pending-install state. Find it and delete it``
+
+>> There seems to be a broken release, stuck in pending-install state. Find it and delete it
 
 
 > ``Team Neptune has its own ServiceAccount named neptune-sa-v2 in Namespace neptune. A coworker needs the token from the Secret that belongs to that ServiceAccount. Write the base64 decoded token to file /opt/course/5/token.``
