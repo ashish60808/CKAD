@@ -7,10 +7,11 @@ Your manager would like to run a command manually on occasion to output the stat
 Start the Job and check its history. Each pod created by the Job should have the label id: awesome-job. The job should be named neb-new-job and the container neb-new-job-container.``
 
 > `` Team Mercury asked you to perform some operations using Helm, all in Namespace mercury:
-1. Delete release internal-issue-report-apiv1
-2. Upgrade release internal-issue-report-apiv2 to any newer version of chart bitnami/nginx available
-3. Install a new release internal-issue-report-apache of chart bitnami/apache. The Deployment should have two replicas, set these via Helm-values during install.
-4. There seems to be a broken release, stuck in pending-install state. Find it and delete it``
+* 1. Delete release internal-issue-report-apiv1
+* 2. Upgrade release internal-issue-report-apiv2 to any newer version of chart bitnami/nginx available
+* 3. Install a new release internal-issue-report-apache of chart bitnami/apache. The Deployment should have two replicas, set these via Helm- 
+     values during install.
+*4. There seems to be a broken release, stuck in pending-install state. Find it and delete it``
 
 
 > ``Team Neptune has its own ServiceAccount named neptune-sa-v2 in Namespace neptune. A coworker needs the token from the Secret that belongs to that ServiceAccount. Write the base64 decoded token to file /opt/course/5/token.``
@@ -65,10 +66,10 @@ Check if the logs of the new container reveal something about the missing data i
 The InitContainer should be using image busybox:1.31.0. Test your implementation for example using curl from a temporary nginx:alpine Pod.``
 
 > ``There seems to be an issue in Namespace mars where the ClusterIP service manager-api-svc should make the Pods of Deployment manager-api-deployment available inside the cluster.
-You can test this with curl manager-api-svc.mars:4444 from a temporary nginx:alpine Pod. Check for the misconfiguration and apply a fix.''
+You can test this with curl manager-api-svc.mars:4444 from a temporary nginx:alpine Pod. Check for the misconfiguration and apply a fix.``
 
 > ``In Namespace jupiter you'll find an apache Deployment (with one replica) named jupiter-crew-deploy and a ClusterIP Service called jupiter-crew-svc which exposes it. Change this service to a NodePort one to make it available on all nodes on port 30100.
-Test the NodePort Service using the internal IP of all available nodes and the port 30100 using curl, you can reach the internal node IPs directly from your main terminal. On which nodes is the Service reachable? On which node is the Pod running?''
+Test the NodePort Service using the internal IP of all available nodes and the port 30100 using curl, you can reach the internal node IPs directly from your main terminal. On which nodes is the Service reachable? On which node is the Pod running?``
 
 > ``In Namespace venus you'll find two Deployments named api and frontend. Both Deployments are exposed inside the cluster using Services. Create a NetworkPolicy named np1 which restricts outgoing tcp connections from Deployment frontend and only allows those going to Deployment api. Make sure the NetworkPolicy still allows outgoing traffic on UDP/TCP ports 53 for DNS resolution.
 Test using: wget www.google.com and wget api:2222 from a Pod of Deployment frontend.``
