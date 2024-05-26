@@ -1,4 +1,4 @@
-> ``The DevOps team would like to get the list of all Namespaces in the cluster. Get the list and save it to /opt/course/1/namespace.
+> ``The DevOps team would like to get the list of all Namespaces in the cluster. Get the list and save it to /opt/course/1/namespace.``
 
 > ``Create a single Pod of image httpd:2.4.41-alpine in Namespace default. The Pod should be named pod1 and the container should be named pod1-container.
 Your manager would like to run a command manually on occasion to output the status of that exact Pod. Please write a command that does this into /opt/course/2/pod1-status-command.sh. The command should use kubectl.``
@@ -6,7 +6,7 @@ Your manager would like to run a command manually on occasion to output the stat
 > ``Team Neptune needs a Job template located at /opt/course/3/job.yaml. This Job should run image busybox:1.31.0 and execute sleep 2 && echo done. It should be in namespace neptune, run a total of 3 times and should execute 2 runs in parallel.
 Start the Job and check its history. Each pod created by the Job should have the label id: awesome-job. The job should be named neb-new-job and the container neb-new-job-container.``
 
-> ``Team Mercury asked you to perform some operations using Helm, all in Namespace mercury:
+> `` Team Mercury asked you to perform some operations using Helm, all in Namespace mercury:
 1. Delete release internal-issue-report-apiv1
 2. Upgrade release internal-issue-report-apiv2 to any newer version of chart bitnami/nginx available
 3. Install a new release internal-issue-report-apache of chart bitnami/apache. The Deployment should have two replicas, set these via Helm-values during install.
@@ -88,5 +88,5 @@ Expose the Deployment internally using a ClusterIP Service named sun-srv on port
 
 Preview Question 3
 > ``Management of EarthAG recorded that one of their Services stopped working. Dirk, the administrator, left already for the long weekend. All the information they could give you is that it was located in Namespace earth and that it stopped working after the latest rollout. All Services of EarthAG should be reachable from inside the cluster.
-Find the Service, fix any issues and confirm it's working again. Write the reason of the error into file /opt/course/p3/ticket-654.txt so Dirk knows what the issue was.''
+Find the Service, fix any issues and confirm it's working again. Write the reason of the error into file /opt/course/p3/ticket-654.txt so Dirk knows what the issue was.``
 
